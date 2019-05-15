@@ -1,2 +1,47 @@
-<h1>Home Component</h1>
-<label>Esto es una prueba</label>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/img/coreFoxLogo.png" width="44" height="45"><span>CoreFox</span>
+    </a>
+</nav>
+<section class="stadistic-section">
+    <div class="row">
+        <div class="col-12 col-12 col-md-2 col-lg-2">
+            <div class="card">
+                    <div class="card-body">
+                        <div class="triangle-topleft">
+                            <img class="icon-statistics" src="../../assets/img/register_users_logo.png">
+                        </div>
+                        <h4  class="card-title-statics">Register Users</h4>
+                        <label class="count-statics">3</label>
+                    </div>                        
+            </div>
+        </div>
+        <div class="col-12 col-12 col-md-2 col-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="triangle-topleft">
+                            <img class="icon-statistics" src="../../assets/img/concurrent_users_logo.png">
+                    </div>
+                    <h4 class="card-title-statics">Concurrent Users</h4>
+                    <label class="count-statics">10</label>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <hr class="separate">
+</section>
+<section>
+    <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6  col-md-2 col-lg-2 col-bootstrap" *ngFor="let app of apps">
+                        <div class="ribbon">{{app.name}}</div>
+                        <div class="core-badge badge">
+                                <div class="circle"></div>
+                        </div>
+                </div>
+            </div>
+    </div>
+</section>
+<footer>
+
+</footer>
